@@ -1,3 +1,3 @@
-## man-cut
+### man-cut
 
-#Online mans-cut.netlify.app
+##Online: mans-cut.netlify.app
