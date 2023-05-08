@@ -1,5 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/layout/Home';
+import Clients from './components/layout/Clients';
+import Products from './components/layout/Products';
+import Barbers from './components/layout/Barbers';
 
 function App() {
   const router = createBrowserRouter([
@@ -7,14 +10,23 @@ function App() {
       path: '/',
       element: < Home />,
       errorElement: '404 NOT FOUND'
+    },
+    {
+      path: '/clients',
+      element: < Clients />
+    },
+    {
+      path: '/products',
+      element: < Products />
+    },
+    {
+      path: '/barbers',
+      element: < Barbers />
     }
   ]);
 
   return (
     <>
-      {/* https://m.media-amazon.com/images/I/717Equ0BB1L._SL1500_.jpg
-      https://m.media-amazon.com/images/I/81LbwO9g3xL._SL1500_.jpg 
-      https://m.media-amazon.com/images/I/614BBKtOVIL._SL1500_.jpg*/}
       <RouterProvider router={router}/>
     </>
   )
